@@ -1,0 +1,174 @@
+:root{
+    --main-fg-color: #290000;
+    --main-bg-color: #ffebb0;
+
+}
+
+@font-face{
+    font-family: "VCR-OSD-Mono";
+    src: 
+    url("VCR_OSD_MONO_1.001.ttf");
+}
+
+@font-face{
+    font-family: "Times-New-Roman";
+    src: 
+    url("times.ttf");
+}
+
+html{
+    font-family: "VCR-OSD-Mono";
+    background-color: var(--main-bg-color);
+    flex: 1;
+
+}
+
+html::selection{
+    color: var(--main-fg-color);
+    background: #ddbf92;
+}
+
+html::-moz-selection{
+    color: var(--main-fg-color);
+    background: #ddbf92;
+}
+
+h1{
+    font-family: "VCR-OSD-Mono";
+    font-weight: 300;
+    text-align:left;
+    font-size: 1.25rem;
+    color: var(--main-fg-color);
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background: none;
+    align-items: left;
+    min-width: 20rem;
+    height: fit-content;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+div{
+    font-family: "VCR-OSD-Mono","sans-serif";
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.001rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.9rem;
+    min-width: 5rem;
+    color: var(--main-fg-color);
+}
+
+.buttons-container{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: space-between;
+}
+
+.select{
+    width: 100%;
+}
+
+.message{
+    font-size: 0.8rem;
+}
+
+input{
+    font-family: "Times-New-Roman","sans-serif";
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
+    border: 1px solid black;
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+input:focus{
+    border: 1px solid black; 
+    outline: none;
+}
+
+
+select{
+    font-family: "VCR-OSD-Mono";
+    background-color: var(--main-bg-color);
+    border: 1px solid black;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color: var(--main-fg-color);
+    width: 100%;
+}
+
+select:focus{
+    border: 1px solid black; 
+    outline: none;
+}
+
+option:hover,
+option:focus {
+  background-color: #fae194;
+}
+
+button{
+    font-family: "VCR-OSD-Mono";
+    border: 1px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
+    transition: background-color 0.2s;
+}
+
+button:hover{
+    background-color: #fae194;
+}
+
+button:active{
+    background-color: #f8da80;
+}
+
+.newFolderControls{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    font-size: 0.8rem;
+}
+
+.newFolderSubmitContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.fittedButton{
+    min-width: 78px;
+}
+
+.folderSelector{
+    display:flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+p{
+    margin: 1%;  
+}

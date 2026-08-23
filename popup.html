@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>NEW BOOKMARK</h1>
+        <div>
+        <label for="name">NAME:</label>
+        <input
+            type="text"
+            id="nameField"
+            name="name"
+            required
+        >
+        </div>
+        <div>
+        <label for="url">URL:</label>
+        <input
+            type="text"
+            id="urlField"
+            name="url"
+            spellcheck="false"
+            required
+        >
+        </div>
+            <div>
+            <label for="folderSelector">FOLDER:</label>
+            </div>
+            <div class="folderSelector">
+            <select name="folderSelector" id="folder">
+            </select>
+            <button id="newFolderButton" title="New Folder">+</button>
+        </div>
+    <div id="newFolderControls" class="newFolderControls" style="display: none">
+        <label for="newFolder">NEW FOLDER NAME</label>
+        <input
+            type="text"
+            id="newFolderField"
+            name="newFolder"
+            required
+        >
+        <label for="parentFolderSelector">NEW FOLDER PARENT FOLDER:</label>
+            <select name="parentFolder" id="parentFolder">
+            </select>
+            <div class="newFolderSubmitContainer">
+                <button id="submitFolder" title="Create New Folder" class="fittedButton">DONE</button>
+                <button id="cancelFolder" title="Cancel New Folder" class="fittedButton">CANCEL</button>
+            </div>
+    </div>
+    <div class="buttons-container">
+        <button id="saveButton" title="Save Bookmark">SAVE</button>
+        <button id="clearButton" title="Clear All Fields">NEW</button>
+    </div>
+    <div id="message" class="message">
+    </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "name": "BMSaver",
+    "version": "1.0",
+    "description": "Save bookmarks quickly without visiting webpages",
+    "author": "paulster",
+    "manifest_version": 3,
+    "permissions": 
+        ["bookmarks"],
+    "action":
+    {
+        "default_popup": "popup.html"
+    },
+    "icons":
+    {
+        "128": "BMSaver-128.png"
+    },
+    "browser_specific_settings":
+    {
+        "gecko":
+        {
+            "id": "bmsaver-firefox@paulster.dev",
+            "data_collection_permissions":
+            {
+                "required": ["none"]
+            }
+        }
+    }
+}
