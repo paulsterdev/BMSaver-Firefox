@@ -1,5 +1,5 @@
 # BMSaver
-BMSaver is an extension for Firefox-based browsers that allows you save bookmarks without first landing on webpages. All you need is the link and a title. You can also use BMSaver to create new folders in your browser's bookmark tree.
+BMSaver is an extension for Firefox-based browsers that allows you to save bookmarks without first landing on webpages. All you need is the link and a title. You can also use BMSaver to create new folders in your browser's bookmark tree.
 
 ## Installing It
 BMSaver can be installed through the Firefox addons repository.
@@ -32,3 +32,8 @@ To create a folder:
 To cancel a new bookmark: Click on **NEW**. This will clear all fields.
 
 To cancel a new folder: Click on **CANCEL**. This will clear the new folder fields and hide the new folder controls.
+
+## The Tech
+BMSaver is written in HTML, CSS, and JS. 
+
+Some visual elements were designed with Figma.
