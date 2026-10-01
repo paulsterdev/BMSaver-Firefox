@@ -1,5 +1,5 @@
 # BMSaver
-BMSaver is an extension for Chrome-based browsers that allows you save bookmarks without first landing on webpages. All you need is the link and a title. You can also use BMSaver to create new folders in your browser's bookmark tree.
+BMSaver is an extension for Firefox-based browsers that allows you save bookmarks without first landing on webpages. All you need is the link and a title. You can also use BMSaver to create new folders in your browser's bookmark tree.
 
 ## Installing It
 BMSaver can be installed through the Firefox addons repository.
